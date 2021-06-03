@@ -24,7 +24,7 @@ INSERT INTO
 board(boardno, title, writer, content,groupno,step,depth) 
 VALUES(	board_sequence.nextval,
         '게시판타이틀'||board_sequence.currval,
-        '김경호'||board_sequence.currval,
+        '김도형'||board_sequence.currval,
         'content'||board_sequence.currval,
         board_sequence.currval,
         1,
@@ -61,7 +61,7 @@ INSERT INTO board(boardno,title,writer,content, groupno, step, depth)
                VALUES
             (board_sequence.nextval,
                 '563번답글1',
-                'guard',
+                'chris',
                 '563번답글컨텐트1',
                 563,
                 2,
@@ -82,7 +82,7 @@ INSERT INTO board(boardno,title,writer,content, groupno, step, depth)
                VALUES
             (board_sequence.nextval,
                 '563번답글2',
-                'guard',
+                'chris',
                 '563번답글컨텐트2',
                 563,
                 2,
@@ -106,7 +106,7 @@ INSERT INTO board(boardno,title,writer,content, groupno, step, depth)
                VALUES
             (board_sequence.nextval,
                 '563번답글답글',
-                'guard',
+                'chris',
                 '563번답글답글컨텐트',
                 563,
                 3,

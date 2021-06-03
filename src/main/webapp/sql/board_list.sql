@@ -1,7 +1,7 @@
 --게시판리스트
 
 
-select boardno,title,groupno,step,depth 
+SELECT boardno,title,groupno,step,depth 
 from board order by groupno desc,step asc;
 
 
@@ -19,9 +19,9 @@ from board order by groupno desc,step asc;
    그리고 sort, aggregation이 수행되기 이전에 할당됩니다.
    또 ROWNUM 값은 할당된 이후에만 증가(increment) 됩니다.
    따라서 아래 쿼리는 로우를 반환하지 않습니다.
-   ex>select rownum,emp.* from emp where rownum > 1;
+   ex>SELECT rownum,emp.* from emp where rownum > 1;
 
-   ex>select ..., ROWNUM from emp where group by having order by ;
+   ex>SELECT ..., ROWNUM from emp where group by having order by ;
       이 쿼리는 다음과 같은 순서로 처리됩니다.
 	1. FROM/WHERE 절이 먼저 처리됩니다.
 	2. ROWNUM이 할당되고 
@@ -33,9 +33,9 @@ from board order by groupno desc,step asc;
 */
 -----------rownum--------------
 --XXXX
-select rownum,board.* from board where rownum > 1;
+SELECT rownum,board.* from board where rownum > 1;
 
-select rownum,board.* from board where rownum >=1 and rownum<=10;
+SELECT rownum,board.* from board where rownum >=1 and rownum<=10;
 
 --SELECT rownum,board.* FROM board;
 
