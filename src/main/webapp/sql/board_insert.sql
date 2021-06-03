@@ -93,7 +93,7 @@ commit;
 --2번step
 UPDATE board SET step = step + 1 WHERE step > 2 AND groupno = 563 ;
 
-commit;
+COMMIT;
 /*
  * 2. 
  * 	  boardno:시퀀스증가
@@ -112,10 +112,12 @@ INSERT INTO board(boardno,title,writer,content, groupno, step, depth)
                 3,
                 2
               );
-commit;  
+COMMIT;  
 
 
-select * from board order by groupno desc;
+SELECT
+    *
+FROM board ORDER BY groupno DESC;
 
 
 
