@@ -2,7 +2,7 @@
 
 
 SELECT boardno,title,groupno,step,depth 
-from board order by groupno desc,step asc;
+FROM board ORDER BY groupno DESC,step ASC;
 
 
 /*
@@ -33,9 +33,9 @@ from board order by groupno desc,step asc;
 */
 -----------rownum--------------
 --XXXX
-SELECT rownum,board.* from board where rownum > 1;
+SELECT rownum,board.* FROM board WHERE rownum > 1;
 
-SELECT rownum,board.* from board where rownum >=1 and rownum<=10;
+SELECT rownum,board.* FROM board WHERE rownum >=1 and rownum<=10;
 
 --SELECT rownum,board.* FROM board;
 
@@ -54,7 +54,7 @@ SELECT rownum idx, s.*  FROM
 				( SELECT * FROM board
 					ORDER BY groupno DESC,step ASC
 				) s
-				where rownum >= 11 and rownum <= 20;
+				WHERE rownum >= 11 and rownum <= 20;
 				
 
 SELECT  ss.* FROM
@@ -95,7 +95,7 @@ ORDER BY groupno DESC,step ASC;
 --2.게시판 1개 게시물 그룹
 SELECT *
 FROM board
-WHERE groupno = 563 order by groupno desc ,step asc;
+WHERE groupno = 563 ORDER BY groupno DESC ,step ASC;
 
 
 SELECT *
